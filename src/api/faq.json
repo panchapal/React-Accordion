@@ -28,5 +28,25 @@
         "id": 6,
         "question": "What is the React.StrictMode?",
         "answer": "React.StrictMode is a component that helps highlight potential problems in an application. It enables additional checks and warnings in the development mode to help identify and address potential bugs and deprecated features."
+      },
+      {
+        "id": 7,
+        "question": "What is React Router?",
+        "answer": "React Router is a popular library for handling routing in React applications. It allows you to define different routes, render components based on the current URL, and navigate between different views in a single-page application."
+      },
+      {
+        "id": 8,
+        "question": "What is the useState hook used for? ",
+        "answer": "The useState hook is used to add state to functional components. It returns a stateful value and a function to update that value. By calling the update function, the component can trigger a re-render with the updated state."
+      },
+      {
+        "id": 9,
+        "question": "What is useEffect Hook in React?",
+        "answer": "The useEffect hook in React allows you to perform side effects in function components. It can be used to handle things like fetching data, directly updating the DOM, and setting up subscriptions. When used with dependencies, it allows you to control when the effect runs based on changes to specific values."
+      },
+      {
+        "id": 10,
+        "question": "What is useMemo Hook in React?",
+        "answer": "The useMemo is a hook used in the functional component of react that returns a memoized value. Memoization is a concept used in general when we don’t need to recompute the function with a given argument for the next time as it returns the cached result. A memoized function remembers the results of output for a given set of inputs."
       }
   ]
