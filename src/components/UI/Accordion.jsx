@@ -18,7 +18,7 @@ export const Accordion = () => {
 
   return (
     <>
-      <h1>The Accordion</h1>
+      <h1>React Questions</h1>
       <ul className="section-accordion">
         {data &&
           data.map((curElem) => {
