@@ -1,52 +1,52 @@
 [
     {
       "id": 1,
-      "question": "What is React.js and why should I use it?",
-      "answer": "React.js is a powerful JavaScript library for building user interfaces. It allows developers to create large web applications that can update and render efficiently in response to data changes, making it an excellent choice for building fast, dynamic, and scalable applications."
+      "question": "1.What is React.js and why should I use it?",
+      "answer": "Ans:- React.js is a powerful JavaScript library for building user interfaces. It allows developers to create large web applications that can update and render efficiently in response to data changes, making it an excellent choice for building fast, dynamic, and scalable applications."
     },
     {
       "id": 2,
-      "question": "How does the Virtual DOM in React work?",
-      "answer": "The Virtual DOM is a lightweight copy of the real DOM in React. When a component's state changes, React compares the new virtual DOM with the previous one, calculates the difference, and updates only the necessary parts of the real DOM, improving performance."
+      "question": "2.How does the Virtual DOM in React work?",
+      "answer": "Ans:- The Virtual DOM is a lightweight copy of the real DOM in React. When a component's state changes, React compares the new virtual DOM with the previous one, calculates the difference, and updates only the necessary parts of the real DOM, improving performance."
     },
     {
       "id": 3,
-      "question": "What are components in React?",
-      "answer": "Components are the building blocks of a React application. They allow you to split the UI into independent, reusable pieces, and think about each piece in isolation. Components can be functional or class-based, making code modular and easier to manage."
+      "question": "3.What are components in React?",
+      "answer": "Ans:- Components are the building blocks of a React application. They allow you to split the UI into independent, reusable pieces, and think about each piece in isolation. Components can be functional or class-based, making code modular and easier to manage."
     },
     {
       "id": 4,
-      "question": "How do you manage state in React?",
-      "answer": "State in React is managed using the useState hook in functional components or the setState method in class components. State allows you to store and manage dynamic data in a component, re-rendering the UI whenever the state changes."
+      "question": "4.How do you manage state in React?",
+      "answer": "Ans:- State in React is managed using the useState hook in functional components or the setState method in class components. State allows you to store and manage dynamic data in a component, re-rendering the UI whenever the state changes."
     },
     {
       "id": 5,
-      "question": "What is JSX in React?",
-      "answer": "JSX is a syntax extension that looks similar to HTML, but it’s actually used in React to describe the UI. JSX allows you to write HTML-like code within JavaScript, making the structure of components more readable and intuitive."
+      "question": "5.What is JSX in React?",
+      "answer": "Ans:- JSX is a syntax extension that looks similar to HTML, but it’s actually used in React to describe the UI. JSX allows you to write HTML-like code within JavaScript, making the structure of components more readable and intuitive."
     },
     {
         "id": 6,
-        "question": "What is the React.StrictMode?",
-        "answer": "React.StrictMode is a component that helps highlight potential problems in an application. It enables additional checks and warnings in the development mode to help identify and address potential bugs and deprecated features."
+        "question": "6.What is the purpose of the useCallback() hook? ",
+        "answer": "Ans:- The useCallback() hook is used to memoize functions in functional components. It returns a memoized version of the callback function that only changes if one of the dependencies has changed. It is useful for optimizing performance in scenarios where functions are passed as props."
       },
       {
         "id": 7,
-        "question": "What is React Router?",
-        "answer": "React Router is a popular library for handling routing in React applications. It allows you to define different routes, render components based on the current URL, and navigate between different views in a single-page application."
+        "question": "7.What is React Router?",
+        "answer": "Ans:- React Router is a popular library for handling routing in React applications. It allows you to define different routes, render components based on the current URL, and navigate between different views in a single-page application."
       },
       {
         "id": 8,
-        "question": "What is the useState hook used for? ",
-        "answer": "The useState hook is used to add state to functional components. It returns a stateful value and a function to update that value. By calling the update function, the component can trigger a re-render with the updated state."
+        "question": "8.What is the useState hook used for? ",
+        "answer": "Ans:- The useState hook is used to add state to functional components. It returns a stateful value and a function to update that value. By calling the update function, the component can trigger a re-render with the updated state."
       },
       {
         "id": 9,
-        "question": "What is useEffect Hook in React?",
-        "answer": "The useEffect hook in React allows you to perform side effects in function components. It can be used to handle things like fetching data, directly updating the DOM, and setting up subscriptions. When used with dependencies, it allows you to control when the effect runs based on changes to specific values."
+        "question": "9.What is useEffect Hook in React?",
+        "answer": "Ans:- The useEffect hook in React allows you to perform side effects in function components. It can be used to handle things like fetching data, directly updating the DOM, and setting up subscriptions. When used with dependencies, it allows you to control when the effect runs based on changes to specific values."
       },
       {
         "id": 10,
-        "question": "What is useMemo Hook in React?",
-        "answer": "The useMemo is a hook used in the functional component of react that returns a memoized value. Memoization is a concept used in general when we don’t need to recompute the function with a given argument for the next time as it returns the cached result. A memoized function remembers the results of output for a given set of inputs."
+        "question": "10.What is useMemo Hook in React?",
+        "answer": "Ans:- The useMemo is a hook used in the functional component of react that returns a memoized value. Memoization is a concept used in general when we don’t need to recompute the function with a given argument for the next time as it returns the cached result. A memoized function remembers the results of output for a given set of inputs."
       }
   ]
