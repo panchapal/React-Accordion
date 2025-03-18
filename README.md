@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# 📚 ReactJS JavaScript Questions Setup
+A ReactJS application that presents JavaScript & React-related questions in an interactive way. This setup guide helps you get started with building a project that displays and manages JavaScript questions efficiently with multiple theme modes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🌍 Weblink: [View Portfolio](https://portfolio-ktmj.vercel.app/)
 
-## Available Scripts
+## 📸 Screenshots:
+<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g1.png"/>
+<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g2.png"/>
+<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g3.png"/>
+<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g4.png"/>
+<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g5.png"/>
+<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g6.png"/>
+<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g7.png"/>
 
-In the project directory, you can run:
+## 📌 Table of Contents
+- 🔍 [Introduction](#introduction)
+- 🎯 [Features](#features)
+- 🛠  [Tech Stack](#techstack)
 
-### `npm start`
+## 🔍 Introduction
+Welcome to the ReactJS JavaScript Questions Setup project! This is a dynamic React application designed to display and manage JavaScript & React-related questions efficiently. With an intuitive interface, users can browse their experience using multiple theme modes. Whether you're a developer preparing for interviews or just testing your JavaScript & React knowledge, this project is the perfect interactive tool.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 Features
+<br/>✅ Display a list of JavaScript questions
+<br/>✅ Interactive question navigation
+<br/>✅ Responsive and user-friendly UI
+<br/>✅ Three Theme Modes: Default Theme, Neon Purple Theme, and Neon Red Theme
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🏗️ Technologies Used
+<br/>✅ React.js
+<br/>✅JavaScript (ES6+)
+<br/>✅React Hooks (useState, useEffect)
+  
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
