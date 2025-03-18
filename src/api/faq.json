@@ -1,52 +1,502 @@
 [
-    {
-      "id": 1,
-      "question": "1.What is React.js and why should I use it?",
-      "answer": "Ans:- React.js is a powerful JavaScript library for building user interfaces. It allows developers to create large web applications that can update and render efficiently in response to data changes, making it an excellent choice for building fast, dynamic, and scalable applications."
-    },
-    {
-      "id": 2,
-      "question": "2.How does the Virtual DOM in React work?",
-      "answer": "Ans:- The Virtual DOM is a lightweight copy of the real DOM in React. When a component's state changes, React compares the new virtual DOM with the previous one, calculates the difference, and updates only the necessary parts of the real DOM, improving performance."
-    },
-    {
-      "id": 3,
-      "question": "3.What are components in React?",
-      "answer": "Ans:- Components are the building blocks of a React application. They allow you to split the UI into independent, reusable pieces, and think about each piece in isolation. Components can be functional or class-based, making code modular and easier to manage."
-    },
-    {
-      "id": 4,
-      "question": "4.How do you manage state in React?",
-      "answer": "Ans:- State in React is managed using the useState hook in functional components or the setState method in class components. State allows you to store and manage dynamic data in a component, re-rendering the UI whenever the state changes."
-    },
-    {
-      "id": 5,
-      "question": "5.What is JSX in React?",
-      "answer": "Ans:- JSX is a syntax extension that looks similar to HTML, but it’s actually used in React to describe the UI. JSX allows you to write HTML-like code within JavaScript, making the structure of components more readable and intuitive."
-    },
-    {
-        "id": 6,
-        "question": "6.What is the purpose of the useCallback() hook? ",
-        "answer": "Ans:- The useCallback() hook is used to memoize functions in functional components. It returns a memoized version of the callback function that only changes if one of the dependencies has changed. It is useful for optimizing performance in scenarios where functions are passed as props."
-      },
-      {
-        "id": 7,
-        "question": "7.What is React Router?",
-        "answer": "Ans:- React Router is a popular library for handling routing in React applications. It allows you to define different routes, render components based on the current URL, and navigate between different views in a single-page application."
-      },
-      {
-        "id": 8,
-        "question": "8.What is the useState hook used for? ",
-        "answer": "Ans:- The useState hook is used to add state to functional components. It returns a stateful value and a function to update that value. By calling the update function, the component can trigger a re-render with the updated state."
-      },
-      {
-        "id": 9,
-        "question": "9.What is useEffect Hook in React?",
-        "answer": "Ans:- The useEffect hook in React allows you to perform side effects in function components. It can be used to handle things like fetching data, directly updating the DOM, and setting up subscriptions. When used with dependencies, it allows you to control when the effect runs based on changes to specific values."
-      },
-      {
-        "id": 10,
-        "question": "10.What is useMemo Hook in React?",
-        "answer": "Ans:- The useMemo is a hook used in the functional component of react that returns a memoized value. Memoization is a concept used in general when we don’t need to recompute the function with a given argument for the next time as it returns the cached result. A memoized function remembers the results of output for a given set of inputs."
-      }
-  ]
+  {
+    "id": 1,
+    "question": "1.What are the key differences between React and Angular?",
+    "answer": "Ans:- React is a JavaScript library focused on building user interfaces, while Angular is a full-fledged framework. React uses a virtual DOM for efficient updates, whereas Angular uses a real DOM. React is more flexible and lightweight, while Angular provides a more opinionated and structured approach."
+  },
+  {
+    "id": 2,
+    "question": "2.What are React Hooks, and why were they introduced?",
+    "answer": "Ans:- React Hooks are functions that allow you to use state and other React features in functional components. They were introduced to simplify state management and side effects in functional components, reducing the need for class components and making code more reusable and readable."
+  },
+  {
+    "id": 3,
+    "question": "3.What is the difference between state and props in React?",
+    "answer": "Ans:- State is internal to a component and used to manage dynamic data, while props are external inputs passed to a component. State can be updated using `useState` or `setState`, whereas props are read-only and cannot be modified by the component receiving them."
+  },
+  {
+    "id": 4,
+    "question": "4.What is the significance of keys in React lists?",
+    "answer": "Ans:- Keys are used in React to identify which items in a list have changed, been added, or been removed. They help React efficiently update the UI by minimizing re-renders and ensuring proper element tracking during reconciliation."
+  },
+  {
+    "id": 5,
+    "question": "5.What is the difference between `let`, `const`, and `var` in JavaScript?",
+    "answer": "Ans:- `let` and `const` are block-scoped, while `var` is function-scoped. `let` allows reassignment, `const` does not, and `var` is hoisted and can be reassigned. `const` is preferred for constants, and `let` is used for variables that need to be reassigned."
+  },
+  {
+    "id": 6,
+    "question": "6.What is the event loop in JavaScript?",
+    "answer": "Ans:- The event loop is a mechanism in JavaScript that handles asynchronous operations. It continuously checks the call stack and processes tasks from the callback queue when the stack is empty, enabling non-blocking behavior in JavaScript."
+  },
+  {
+    "id": 7,
+    "question": "7.What are closures in JavaScript?",
+    "answer": "Ans:- Closures are functions that retain access to variables from their outer (enclosing) scope even after the outer function has finished executing. They are commonly used for data encapsulation, callbacks, and functional programming patterns."
+  },
+  {
+    "id": 8,
+    "question": "8.What is the difference between `==` and `===` in JavaScript?",
+    "answer": "Ans:- `==` is the loose equality operator that performs type coercion before comparison, while `===` is the strict equality operator that checks both value and type without coercion. `===` is generally preferred for predictable comparisons."
+  },
+  {
+    "id": 9,
+    "question": "9.What is the purpose of the `map()` function in JavaScript?",
+    "answer": "Ans:- The `map()` function is used to transform elements in an array by applying a function to each element and returning a new array with the results. It does not modify the original array and is commonly used for rendering lists in React."
+  },
+  {
+    "id": 10,
+    "question": "10.What is Redux, and how does it work with React?",
+    "answer": "Ans:- Redux is a state management library for JavaScript applications. It provides a centralized store to manage the state of an application, making it easier to debug and maintain. React-Redux is used to connect Redux with React components, allowing them to access and update the global state."
+  },
+  {
+    "id": 11,
+    "question": "11.What is the difference between synchronous and asynchronous code in JavaScript?",
+    "answer": "Ans:- Synchronous code executes line by line, blocking further execution until the current operation is complete. Asynchronous code allows other operations to run while waiting for the current one to finish, typically using callbacks, promises, or async/await."
+  },
+  {
+    "id": 12,
+    "question": "12.What are promises in JavaScript?",
+    "answer": "Ans:- Promises are objects that represent the eventual completion (or failure) of an asynchronous operation. They allow you to handle asynchronous operations more cleanly using `.then()` for success and `.catch()` for errors, or `async/await` for a more synchronous-like syntax."
+  },
+  {
+    "id": 13,
+    "question": "13.What is the purpose of the `useReducer` hook in React?",
+    "answer": "Ans:- The `useReducer` hook is used for managing complex state logic in functional components. It takes a reducer function and an initial state, returning the current state and a dispatch function to trigger state updates based on actions."
+  },
+  {
+    "id": 14,
+    "question": "14.What is the difference between `null` and `undefined` in JavaScript?",
+    "answer": "Ans:- `null` is an intentional absence of any value, while `undefined` means a variable has been declared but not assigned a value. `null` is an object, and `undefined` is a type itself."
+  },
+  {
+    "id": 15,
+    "question": "15.What is the purpose of the `useContext` hook in React?",
+    "answer": "Ans:- The `useContext` hook allows functional components to consume context values without wrapping them in a `Context.Consumer`. It simplifies accessing global state or shared data across multiple components."
+  },
+  {
+    "id": 16,
+    "question": "16.What is the purpose of the `useRef` hook in React?",
+    "answer": "Ans:- The `useRef` hook is used to create a mutable reference that persists across renders. It is commonly used to access DOM elements directly or store values that do not trigger re-renders when updated."
+  },
+  {
+    "id": 17,
+    "question": "17.What is the difference between controlled and uncontrolled components in React?",
+    "answer": "Ans:- Controlled components are managed by React state, where the component's value is controlled by React. Uncontrolled components rely on the DOM to manage their state, typically using `ref` to access their values."
+  },
+  {
+    "id": 18,
+    "question": "18.What is the purpose of the `useMemo` hook in React?",
+    "answer": "Ans:- The `useMemo` hook is used to memoize expensive calculations. It returns a cached value that only recalculates when one of its dependencies changes, optimizing performance by avoiding unnecessary computations."
+  },
+  {
+    "id": 19,
+    "question": "19.What is the difference between `useCallback` and `useMemo`?",
+    "answer": "Ans:- `useCallback` memoizes functions, while `useMemo` memoizes values. Both are used for performance optimization, but `useCallback` is specifically for functions passed as props, and `useMemo` is for computed values."
+  },
+  {
+    "id": 20,
+    "question": "20.What is the purpose of the `useEffect` cleanup function?",
+    "answer": "Ans:- The `useEffect` cleanup function is used to clean up side effects like subscriptions, timers, or event listeners when the component unmounts or before the effect runs again. It prevents memory leaks and unwanted behavior."
+  },
+  {
+    "id": 21,
+    "question": "21.What is the difference between `props` and `state` in React?",
+    "answer": "Ans:- `props` are read-only and passed from a parent component, while `state` is internal and managed within the component. `props` cannot be modified by the child component, whereas `state` can be updated using `setState` or `useState`."
+  },
+  {
+    "id": 22,
+    "question": "22.What is the purpose of the `key` prop in React lists?",
+    "answer": "Ans:- The `key` prop helps React identify which items in a list have changed, been added, or been removed. It improves performance by minimizing re-renders and ensuring proper element tracking during reconciliation."
+  },
+  {
+    "id": 23,
+    "question": "23.What is the difference between `React.memo` and `useMemo`?",
+    "answer": "Ans:- `React.memo` is a higher-order component that memoizes the entire component, preventing re-renders if props haven't changed. `useMemo` is a hook that memoizes a specific value or computation within a component."
+  },
+  {
+    "id": 24,
+    "question": "24.What is the purpose of the `useLayoutEffect` hook in React?",
+    "answer": "Ans:- The `useLayoutEffect` hook is similar to `useEffect`, but it runs synchronously after all DOM mutations. It is used for operations that require direct DOM manipulation or measurements before the browser paints."
+  },
+  {
+    "id": 25,
+    "question": "25.What is the difference between `React.Fragment` and a `<div>`?",
+    "answer": "Ans:- `React.Fragment` allows you to group multiple elements without adding an extra node to the DOM, while a `<div>` creates an additional DOM element. Fragments are useful for cleaner and more semantic markup."
+  },
+  {
+    "id": 26,
+    "question": "26.What is the purpose of the `useImperativeHandle` hook in React?",
+    "answer": "Ans:- The `useImperativeHandle` hook customizes the instance value exposed when using `ref` with `forwardRef`. It is used to expose specific functions or properties to parent components."
+  },
+  {
+    "id": 27,
+    "question": "27.What is the difference between `useState` and `useReducer`?",
+    "answer": "Ans:- `useState` is used for simple state management, while `useReducer` is used for complex state logic. `useReducer` takes a reducer function and an initial state, making it more suitable for managing state transitions."
+  },
+  {
+    "id": 28,
+    "question": "28.What is the purpose of the `useDebugValue` hook in React?",
+    "answer": "Ans:- The `useDebugValue` hook is used to display custom labels for custom hooks in React DevTools. It helps developers debug and understand the purpose of custom hooks more easily."
+  },
+  {
+    "id": 29,
+    "question": "29.What is the difference between `React.PureComponent` and `React.Component`?",
+    "answer": "Ans:- `React.PureComponent` implements a shallow comparison of props and state to determine if a re-render is needed, while `React.Component` does not. `PureComponent` is used for performance optimization."
+  },
+  {
+    "id": 30,
+    "question": "30.What is the purpose of the `ErrorBoundary` component in React?",
+    "answer": "Ans:- An `ErrorBoundary` is a React component that catches JavaScript errors in its child component tree, logs the error, and displays a fallback UI. It prevents the entire app from crashing due to errors."
+  },
+  {
+    "id": 31,
+    "question": "31.What is the difference between `async/await` and `Promises` in JavaScript?",
+    "answer": "Ans:- `async/await` is syntactic sugar built on top of Promises, making asynchronous code look more like synchronous code. Promises use `.then()` and `.catch()` for handling results and errors, while `async/await` uses `try/catch` blocks."
+  },
+  {
+    "id": 32,
+    "question": "32.What is the purpose of the `fetch` API in JavaScript?",
+    "answer": "Ans:- The `fetch` API is used to make HTTP requests in JavaScript. It returns a Promise that resolves to the response of the request, allowing you to handle data asynchronously."
+  },
+  {
+    "id": 33,
+    "question": "33.What is the difference between `localStorage` and `sessionStorage`?",
+    "answer": "Ans:- `localStorage` persists data even after the browser is closed, while `sessionStorage` clears data when the browser session ends. Both are used to store key-value pairs in the browser."
+  },
+  {
+    "id": 34,
+    "question": "34.What is the purpose of the `this` keyword in JavaScript?",
+    "answer": "Ans:- The `this` keyword refers to the context in which a function is executed. In global scope, `this` refers to the global object, while in a method, it refers to the object that owns the method."
+  },
+  {
+    "id": 35,
+    "question": "35.What is the difference between `call`, `apply`, and `bind` in JavaScript?",
+    "answer": "Ans:- `call` and `apply` invoke a function with a specific `this` value and arguments. `call` takes arguments individually, while `apply` takes them as an array. `bind` creates a new function with a bound `this` value but does not invoke it."
+  },
+  {
+    "id": 36,
+    "question": "36.What is the purpose of the `Array.reduce()` method in JavaScript?",
+    "answer": "Ans:- The `Array.reduce()` method reduces an array to a single value by executing a reducer function on each element. It is commonly used for summing values, flattening arrays, or grouping data."
+  },
+  {
+    "id": 37,
+    "question": "37.What is the difference between `slice` and `splice` in JavaScript?",
+    "answer": "Ans:- `slice` returns a shallow copy of a portion of an array without modifying the original array. `splice` modifies the original array by adding, removing, or replacing elements."
+  },
+  {
+    "id": 38,
+    "question": "38.What is the purpose of the `Object.keys()` method in JavaScript?",
+    "answer": "Ans:- The `Object.keys()` method returns an array of a given object's property names. It is commonly used to iterate over an object's keys or check if an object is empty."
+  },
+  {
+    "id": 39,
+    "question": "39.What is the difference between `forEach` and `map` in JavaScript?",
+    "answer": "Ans:- `forEach` executes a function on each array element but does not return a value. `map` executes a function on each element and returns a new array with the results."
+  },
+  {
+    "id": 40,
+    "question": "40.What is the purpose of the `Object.assign()` method in JavaScript?",
+    "answer": "Ans:- The `Object.assign()` method copies the properties of one or more source objects to a target object. It is commonly used for shallow cloning or merging objects."
+  },
+  {
+    "id": 41,
+    "question": "41.What is the difference between `null` and `undefined` in JavaScript?",
+    "answer": "Ans:- `null` is an intentional absence of any value, while `undefined` means a variable has been declared but not assigned a value. `null` is an object, and `undefined` is a type itself."
+  },
+  {
+    "id": 42,
+    "question": "42.What is the purpose of the `Array.filter()` method in JavaScript?",
+    "answer": "Ans:- The `Array.filter()` method creates a new array with all elements that pass a test implemented by the provided function. It is commonly used to filter data based on conditions."
+  },
+  {
+    "id": 43,
+    "question": "43.What is the difference between `==` and `===` in JavaScript?",
+    "answer": "Ans:- `==` is the loose equality operator that performs type coercion before comparison, while `===` is the strict equality operator that checks both value and type without coercion. `===` is generally preferred for predictable comparisons."
+  },
+  {
+    "id": 44,
+    "question": "44.What is the purpose of the `Array.find()` method in JavaScript?",
+    "answer": "Ans:- The `Array.find()` method returns the first element in an array that satisfies a provided testing function. It is commonly used to search for specific elements in an array."
+  },
+  {
+    "id": 45,
+    "question": "45.What is the difference between `let` and `var` in JavaScript?",
+    "answer": "Ans:- `let` is block-scoped, while `var` is function-scoped. `let` does not allow redeclaration in the same scope, while `var` does. `let` is preferred for modern JavaScript development."
+  },
+  {
+    "id": 46,
+    "question": "46.What is the purpose of the `Array.includes()` method in JavaScript?",
+    "answer": "Ans:- The `Array.includes()` method checks if an array includes a certain value and returns `true` or `false`. It is commonly used to check for the presence of an element in an array."
+  },
+  {
+    "id": 47,
+    "question": "47.What is the difference between `Object.freeze()` and `Object.seal()` in JavaScript?",
+    "answer": "Ans:- `Object.freeze()` makes an object immutable, preventing any changes to its properties. `Object.seal()` prevents adding or removing properties but allows modifying existing ones."
+  },
+  {
+    "id": 48,
+    "question": "48.What is the purpose of the `Array.some()` method in JavaScript?",
+    "answer": "Ans:- The `Array.some()` method tests whether at least one element in the array passes the provided test. It returns `true` if any element satisfies the condition, otherwise `false`."
+  },
+  {
+    "id": 49,
+    "question": "49.What is the difference between `Object.keys()` and `Object.values()` in JavaScript?",
+    "answer": "Ans:- `Object.keys()` returns an array of an object's property names, while `Object.values()` returns an array of the object's property values."
+  },
+  {
+    "id": 50,
+    "question": "50.What is the purpose of the `Array.every()` method in JavaScript?",
+    "answer": "Ans:- The `Array.every()` method tests whether all elements in the array pass the provided test. It returns `true` if all elements satisfy the condition, otherwise `false`."
+  },
+  
+  {"id": 51,
+  "question": "51. What is the purpose of the `useTransition` hook in React?",
+  "answer": "Ans:- The `useTransition` hook is used to mark certain state updates as non-urgent, allowing React to prioritize more critical updates. It helps improve the performance of applications by deferring less important updates."
+},
+{
+  "id": 52,
+  "question": "52. What is the difference between `useEffect` and `useLayoutEffect` in React?",
+  "answer": "Ans:- `useEffect` runs asynchronously after the browser paints, while `useLayoutEffect` runs synchronously after DOM mutations but before the browser paints. `useLayoutEffect` is used for operations that require direct DOM manipulation or measurements."
+},
+{
+  "id": 53,
+  "question": "53. What is the purpose of the `React.StrictMode` component?",
+  "answer": "Ans:- `React.StrictMode` is a tool for highlighting potential problems in an application. It activates additional checks and warnings for its descendants, helping developers identify unsafe lifecycle methods, legacy API usage, and other issues."
+},
+{
+  "id": 54,
+  "question": "54. What is the difference between `React.createElement` and JSX?",
+  "answer": "Ans:- `React.createElement` is a function that creates React elements, while JSX is a syntactic sugar that compiles to `React.createElement`. JSX is more readable and easier to write, especially for complex UI structures."
+},
+{
+  "id": 55,
+  "question": "55. What is the purpose of the `useDeferredValue` hook in React?",
+  "answer": "Ans:- The `useDeferredValue` hook allows you to defer updating a part of the UI, making it useful for optimizing performance when dealing with slow or expensive re-renders. It helps maintain responsiveness in the application."
+},
+{
+  "id": 56,
+  "question": "56. What is the difference between `React.PureComponent` and `React.memo`?",
+  "answer": "Ans:- `React.PureComponent` is a class component that performs a shallow comparison of props and state, while `React.memo` is a higher-order component that memoizes functional components based on props. Both are used for performance optimization."
+},
+{
+  "id": 57,
+  "question": "57. What is the purpose of the `useId` hook in React?",
+  "answer": "Ans:- The `useId` hook generates unique IDs that are stable across server and client renders. It is useful for generating unique IDs for accessibility attributes or other DOM elements."
+},
+{
+  "id": 58,
+  "question": "58. What is the difference between `React.Fragment` and `<>` syntax?",
+  "answer": "Ans:- `React.Fragment` and `<>` are both used to group multiple elements without adding an extra node to the DOM. The `<>` syntax is a shorthand for `React.Fragment` and is commonly used for cleaner code."
+},
+{
+  "id": 59,
+  "question": "59. What is the purpose of the `useSyncExternalStore` hook in React?",
+  "answer": "Ans:- The `useSyncExternalStore` hook allows React components to subscribe to external stores and synchronize with their state. It is useful for integrating React with third-party state management libraries."
+},
+{
+  "id": 60,
+  "question": "60. What is the difference between `React.lazy` and `Suspense`?",
+  "answer": "Ans:- `React.lazy` is used to dynamically import components, while `Suspense` is used to specify a fallback UI while the lazy-loaded component is being loaded. They work together to enable code-splitting and lazy loading in React."
+},
+{
+  "id": 61,
+  "question": "61. What is the purpose of the `useInsertionEffect` hook in React?",
+  "answer": "Ans:- The `useInsertionEffect` hook is used for injecting styles into the DOM before any layout effects are fired. It is primarily used by CSS-in-JS libraries to ensure styles are applied before the browser paints."
+},
+{
+  "id": 62,
+  "question": "62. What is the difference between `React.Children.map` and `React.Children.forEach`?",
+  "answer": "Ans:- `React.Children.map` returns a new array of React elements after applying a function to each child, while `React.Children.forEach` executes a function on each child without returning a value. Both are used to iterate over children."
+},
+{
+  "id": 63,
+  "question": "63. What is the purpose of the `useOptimistic` hook in React?",
+  "answer": "Ans:- The `useOptimistic` hook is used to optimistically update the UI before a server response is received. It is useful for improving perceived performance in applications with asynchronous operations."
+},
+{
+  "id": 64,
+  "question": "64. What is the difference between `ReactDOM.render` and `ReactDOM.createRoot`?",
+  "answer": "Ans:- `ReactDOM.render` is the legacy API for rendering React components, while `ReactDOM.createRoot` is the modern API that enables concurrent rendering features. `createRoot` is recommended for new applications."
+},
+{
+  "id": 65,
+  "question": "65. What is the purpose of the `useActionState` hook in React?",
+  "answer": "Ans:- The `useActionState` hook is used to manage the state of an action, such as a form submission or API call. It provides a way to track the status of the action and handle errors or loading states."
+},
+{
+  "id": 66,
+  "question": "66. What is the difference between `React.forwardRef` and `useImperativeHandle`?",
+  "answer": "Ans:- `React.forwardRef` is used to forward refs to child components, while `useImperativeHandle` customizes the instance value exposed by the ref. They are often used together to expose specific functionality to parent components."
+},
+{
+  "id": 67,
+  "question": "67. What is the purpose of the `useFormStatus` hook in React?",
+  "answer": "Ans:- The `useFormStatus` hook provides information about the status of a form, such as whether it is submitting or has been submitted. It is useful for managing form state and displaying feedback to users."
+},
+{
+  "id": 68,
+  "question": "68. What is the difference between `ReactDOM.hydrate` and `ReactDOM.render`?",
+  "answer": "Ans:- `ReactDOM.hydrate` is used to attach event listeners to server-rendered HTML, while `ReactDOM.render` is used to render components on the client side. `hydrate` is used in server-side rendering (SSR) scenarios."
+},
+{
+  "id": 69,
+  "question": "69. What is the purpose of the `useFormState` hook in React?",
+  "answer": "Ans:- The `useFormState` hook is used to manage the state of a form, including its values, errors, and submission status. It simplifies form handling and validation in React applications."
+},
+{
+  "id": 70,
+  "question": "70. What is the difference between `ReactDOM.unmountComponentAtNode` and `root.unmount`?",
+  "answer": "Ans:- `ReactDOM.unmountComponentAtNode` is the legacy API for unmounting a React component from a DOM node, while `root.unmount` is the modern API for unmounting a root created with `ReactDOM.createRoot`. Both are used to clean up React components."
+},
+{
+  "id": 71,
+  "question": "71. What is the purpose of the `useEvent` hook in React?",
+  "answer": "Ans:- The `useEvent` hook is used to define event handlers that are stable across renders. It helps avoid unnecessary re-renders and ensures consistent behavior in event-driven applications."
+},
+{
+  "id": 72,
+  "question": "72. What is the difference between `ReactDOM.findDOMNode` and `ref`?",
+  "answer": "Ans:- `ReactDOM.findDOMNode` is a legacy API for accessing the DOM node of a class component, while `ref` is the modern way to access DOM nodes or React components. `ref` is preferred for functional components."
+},
+{
+  "id": 73,
+  "question": "73. What is the purpose of the `useCacheRefresh` hook in React?",
+  "answer": "Ans:- The `useCacheRefresh` hook is used to refresh cached data in React applications. It is useful for scenarios where data needs to be revalidated or updated periodically."
+},
+{
+  "id": 74,
+  "question": "74. What is the difference between `ReactDOM.createPortal` and `ReactDOM.render`?",
+  "answer": "Ans:- `ReactDOM.createPortal` is used to render a component outside its parent DOM hierarchy, while `ReactDOM.render` renders a component within its parent hierarchy. Portals are useful for modals, tooltips, and overlays."
+},
+{
+  "id": 75,
+  "question": "75. What is the purpose of the `useMutationEffect` hook in React?",
+  "answer": "Ans:- The `useMutationEffect` hook is used to perform side effects in response to DOM mutations. It is similar to `useLayoutEffect` but is triggered specifically when the DOM is mutated."
+},
+{
+  "id": 76,
+  "question": "76. What is the difference between `ReactDOM.unstable_batchedUpdates` and `ReactDOM.flushSync`?",
+  "answer": "Ans:- `ReactDOM.unstable_batchedUpdates` is used to batch multiple state updates into a single re-render, while `ReactDOM.flushSync` forces synchronous updates outside the normal batching mechanism. Both are used for performance optimization."
+},
+{
+  "id": 77,
+  "question": "77. What is the purpose of the `useOpaqueIdentifier` hook in React?",
+  "answer": "Ans:- The `useOpaqueIdentifier` hook generates unique identifiers that are stable across server and client renders. It is useful for generating unique IDs for accessibility attributes or other DOM elements."
+},
+{
+  "id": 78,
+  "question": "78. What is the difference between `ReactDOM.createRoot` and `ReactDOM.unstable_createRoot`?",
+  "answer": "Ans:- `ReactDOM.createRoot` is the stable API for creating a root with concurrent rendering features, while `ReactDOM.unstable_createRoot` was the experimental version of the same API. The stable version is recommended for production use."
+},
+{
+  "id": 79,
+  "question": "79. What is the purpose of the `useMutableSource` hook in React?",
+  "answer": "Ans:- The `useMutableSource` hook is used to subscribe to external mutable sources of data, such as global state or third-party libraries. It allows React components to stay in sync with external state changes."
+},
+{
+  "id": 80,
+  "question": "80. What is the difference between `ReactDOM.render` and `ReactDOM.hydrateRoot`?",
+  "answer": "Ans:- `ReactDOM.render` is the legacy API for rendering React components, while `ReactDOM.hydrateRoot` is the modern API for hydrating server-rendered HTML with React. `hydrateRoot` is used in server-side rendering (SSR) scenarios."
+},
+{
+  "id": 81,
+  "question": "81. What is the purpose of the `useSubscription` hook in React?",
+  "answer": "Ans:- The `useSubscription` hook is used to subscribe to external data sources, such as observables or event streams. It allows React components to react to changes in external data."
+},
+{
+  "id": 82,
+  "question": "82. What is the difference between `ReactDOM.createPortal` and `ReactDOM.createRoot`?",
+  "answer": "Ans:- `ReactDOM.createPortal` is used to render a component outside its parent DOM hierarchy, while `ReactDOM.createRoot` is used to create a root for concurrent rendering. Portals are useful for rendering components in different parts of the DOM."
+},
+{
+  "id": 83,
+  "question": "83. What is the purpose of the `useTransition` hook in React?",
+  "answer": "Ans:- The `useTransition` hook is used to mark certain state updates as non-urgent, allowing React to prioritize more critical updates. It helps improve the performance of applications by deferring less important updates."
+},
+{
+  "id": 84,
+  "question": "84. What is the difference between `ReactDOM.render` and `ReactDOM.createBlockingRoot`?",
+  "answer": "Ans:- `ReactDOM.render` is the legacy API for rendering React components, while `ReactDOM.createBlockingRoot` is an experimental API for creating a root with blocking rendering features. The stable `createRoot` API is recommended for most use cases."
+},
+{
+  "id": 85,
+  "question": "85. What is the purpose of the `useDeferredValue` hook in React?",
+  "answer": "Ans:- The `useDeferredValue` hook allows you to defer updating a part of the UI, making it useful for optimizing performance when dealing with slow or expensive re-renders. It helps maintain responsiveness in the application."
+},
+{
+  "id": 86,
+  "question": "86. What is the difference between `ReactDOM.createRoot` and `ReactDOM.unstable_createRoot`?",
+  "answer": "Ans:- `ReactDOM.createRoot` is the stable API for creating a root with concurrent rendering features, while `ReactDOM.unstable_createRoot` was the experimental version of the same API. The stable version is recommended for production use."
+},
+{
+  "id": 87,
+  "question": "87. What is the purpose of the `useId` hook in React?",
+  "answer": "Ans:- The `useId` hook generates unique IDs that are stable across server and client renders. It is useful for generating unique IDs for accessibility attributes or other DOM elements."
+},
+{
+  "id": 88,
+  "question": "88. What is the difference between `ReactDOM.render` and `ReactDOM.hydrateRoot`?",
+  "answer": "Ans:- `ReactDOM.render` is the legacy API for rendering React components, while `ReactDOM.hydrateRoot` is the modern API for hydrating server-rendered HTML with React. `hydrateRoot` is used in server-side rendering (SSR) scenarios."
+},
+{
+  "id": 89,
+  "question": "89. What is the purpose of the `useSyncExternalStore` hook in React?",
+  "answer": "Ans:- The `useSyncExternalStore` hook allows React components to subscribe to external stores and synchronize with their state. It is useful for integrating React with third-party state management libraries."
+},
+{
+  "id": 90,
+  "question": "90. What is the difference between `React.lazy` and `Suspense`?",
+  "answer": "Ans:- `React.lazy` is used to dynamically import components, while `Suspense` is used to specify a fallback UI while the lazy-loaded component is being loaded. They work together to enable code-splitting and lazy loading in React."
+},
+{
+  "id": 91,
+  "question": "91. What is the purpose of the `useInsertionEffect` hook in React?",
+  "answer": "Ans:- The `useInsertionEffect` hook is used for injecting styles into the DOM before any layout effects are fired. It is primarily used by CSS-in-JS libraries to ensure styles are applied before the browser paints."
+},
+{
+  "id": 92,
+  "question": "92. What is the difference between `React.Children.map` and `React.Children.forEach`?",
+  "answer": "Ans:- `React.Children.map` returns a new array of React elements after applying a function to each child, while `React.Children.forEach` executes a function on each child without returning a value. Both are used to iterate over children."
+},
+{
+  "id": 93,
+  "question": "93. What is the purpose of the `useOptimistic` hook in React?",
+  "answer": "Ans:- The `useOptimistic` hook is used to optimistically update the UI before a server response is received. It is useful for improving perceived performance in applications with asynchronous operations."
+},
+{
+  "id": 94,
+  "question": "94. What is the difference between `ReactDOM.render` and `ReactDOM.createRoot`?",
+  "answer": "Ans:- `ReactDOM.render` is the legacy API for rendering React components, while `ReactDOM.createRoot` is the modern API that enables concurrent rendering features. `createRoot` is recommended for new applications."
+},
+{
+  "id": 95,
+  "question": "95. What is the purpose of the `useActionState` hook in React?",
+  "answer": "Ans:- The `useActionState` hook is used to manage the state of an action, such as a form submission or API call. It provides a way to track the status of the action and handle errors or loading states."
+},
+{
+  "id": 96,
+  "question": "96. What is the difference between `React.forwardRef` and `useImperativeHandle`?",
+  "answer": "Ans:- `React.forwardRef` is used to forward refs to child components, while `useImperativeHandle` customizes the instance value exposed by the ref. They are often used together to expose specific functionality to parent components."
+},
+{
+  "id": 97,
+  "question": "97. What is the purpose of the `useFormStatus` hook in React?",
+  "answer": "Ans:- The `useFormStatus` hook provides information about the status of a form, such as whether it is submitting or has been submitted. It is useful for managing form state and displaying feedback to users."
+},
+{
+  "id": 98,
+  "question": "98. What is the difference between `ReactDOM.hydrate` and `ReactDOM.render`?",
+  "answer": "Ans:- `ReactDOM.hydrate` is used to attach event listeners to server-rendered HTML, while `ReactDOM.render` is used to render components on the client side. `hydrate` is used in server-side rendering (SSR) scenarios."
+},
+{
+  "id": 99,
+  "question": "99. What is the purpose of the `useFormState` hook in React?",
+  "answer": "Ans:- The `useFormState` hook is used to manage the state of a form, including its values, errors, and submission status. It simplifies form handling and validation in React applications."
+},
+{
+  "id": 100,
+  "question": "100. What is the difference between `ReactDOM.unmountComponentAtNode` and `root.unmount`?",
+  "answer": "Ans:- `ReactDOM.unmountComponentAtNode` is the legacy API for unmounting a React component from a DOM node, while `root.unmount` is the modern API for unmounting a root created with `ReactDOM.createRoot`. Both are used to clean up React components."
+}
+]
