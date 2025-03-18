@@ -1,16 +1,12 @@
-# 📚 ReactJS JavaScript Questions Setup
+# 📚 React-JS JavaScript Questions Setup
 A ReactJS application that presents JavaScript & React-related questions in an interactive way. This setup guide helps you get started with building a project that displays and manages JavaScript questions efficiently with multiple theme modes.
 
-### 🌍 Weblink: [View Portfolio](https://portfolio-ktmj.vercel.app/)
+### 🌍 Weblink: [View Portfolio](https://react-accordion-eight-delta.vercel.app/)
 
 ## 📸 Screenshots:
-<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g1.png"/>
-<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g2.png"/>
-<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g3.png"/>
-<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g4.png"/>
-<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g5.png"/>
-<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g6.png"/>
-<img width="450px;" src="https://github.com/panchapal/portfolio/blob/main/public/images/g7.png"/>
+<img width="450px;" src="https://github.com/panchapal/React-Accordion/blob/main/public/image/1.png"/>
+<img width="450px;" src="https://github.com/panchapal/React-Accordion/blob/main/public/image/2.png"/>
+<img width="450px;" src="https://github.com/panchapal/React-Accordion/blob/main/public/image/3.png"/>
 
 ## 📌 Table of Contents
 - 🔍 [Introduction](#introduction)
